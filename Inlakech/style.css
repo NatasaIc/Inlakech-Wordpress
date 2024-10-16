@@ -8,3 +8,63 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: music, dj, dark, responsive
 Text Domain: inlakech
 */
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.hero_background {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.link_nav {
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.container_text {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.horizontal-scrolling-items {
+  display: flex;
+  font-size: 120px;
+  width: 2600px;
+  animation-name: infiniteScroll;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.horizontal-scrolling-items_2 {
+  display: flex;
+  font-size: 40px;
+  width: 2600px;
+  animation-name: infiniteScroll;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.horizontal-scrolling-items__item {
+  white-space: nowrap;
+}
